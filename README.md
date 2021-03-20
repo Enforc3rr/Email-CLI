@@ -5,4 +5,4 @@ Client To Send And Receive Email using Command Line Interface.
 
 #### Modules Used -
 1) Inquirer ( To Take in Input )
-2) Puppeteer 
+2) Puppeteer-Extra 
