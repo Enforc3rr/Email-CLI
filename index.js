@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const puppeteer = require("puppeteer");
+const login = require("./login");
 
 inquirer
 .prompt(
@@ -20,7 +21,7 @@ inquirer
 .then(answers => {
     const {email , password} = answers;
     if(validateEmail(email))
-        console.log(email + "  " + password);
+        login(email,password);
     else
         console.log(`Entered Email ID ${email} is not valid , Enter Other Email Address`);
 })
